@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+label {
+  font-size: 16px;
+}
+
+.slider {
+  display: flex;
+}
+.slider img {
+  height: 250px;
+  width: 500px;
+  background-size: cover;
+}
+
+.todolist {
+  width: 100%;
+  max-width: 550px;
+  padding: 15px;
+  border: 1px solid #fff;
+}
+.todolist__header input {
+  width: 100%;
+}
+.todolist__tasks {
+  margin-top: 5px;
+}
+.todolist__tasks__task {
+  text-align: left;
+  position: relative;
+  font-size: 18px;
+  padding: 5px;
+}
+.todolist__tasks__task:hover {
+  background-color: lightgray;
+}
+.todolist__tasks__task .delete {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+}
+.todolist__tasks__task:hover .delete {
+  display: inline-block;
+  font-size: 15px;
+  margin-top: 4px;
+  color: red;
+}
+.todolist__tasks__task input[type=checkbox] {
+  margin-right: 15px;
+  cursor: pointer;
+}
+.todolist__tasks__task.done {
+  color: #0075FF;
+  text-decoration: line-through;
+}
+.todolistfooter {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.todolistfooter .buttons button {
+  margin: 0 5px;
+  cursor: pointer;
+}
+.todolistfooter .buttons button.selected {
+  border-color: mediumseagreen;
+}
+.todolistfooter span {
+  cursor: pointer;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
