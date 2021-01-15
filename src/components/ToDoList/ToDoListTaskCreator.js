@@ -22,6 +22,7 @@ class ToDoListTaskCreator extends React.Component {
     render() {
         return (
             <div className="todolist__header">
+            <h4>Write something and Enter</h4>
                 <input
                     type="text"
                     onKeyDown={this.createNewTask.bind(this)}
